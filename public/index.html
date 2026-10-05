@@ -1,0 +1,9 @@
+<script>
+    async function getCode() {
+        // Gọi API tương đối trên cùng máy chủ Render
+        const res = await fetch('/api/get-code');
+        const data = await res.json();
+        console.log("Mã từ server:", data.code);
+    }
+    getCode();
+      </script>
